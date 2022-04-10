@@ -9,13 +9,13 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        double number;
+        int number;
         do {
             System.out.println("Please input natural number:");
-            number = scanner.nextDouble();
+            number = scanner.nextInt();
         } while (number < 0);
 
-        String msg = Factorial.countFactorial(number) + "";
+        String msg = "Factorial is " + Factorial.countFactorial(number);
 
         Printer.print(msg);
 

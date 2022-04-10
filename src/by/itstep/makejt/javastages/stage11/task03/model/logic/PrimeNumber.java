@@ -1,7 +1,7 @@
 package by.itstep.makejt.javastages.stage11.task03.model.logic;
 
 public class PrimeNumber {
-    public static boolean isPrimeNumber (double number){
+    public static boolean isPrimeNumber (int number){
         boolean result = false;
 
         int count = 0;

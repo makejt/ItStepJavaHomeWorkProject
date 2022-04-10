@@ -1,4 +1,4 @@
-package by.itstep.makejt.javastages.stage11.addtask02.magic.logic;
+package by.itstep.makejt.javastages.stage11.addtask02.model.logic;
 
 public class ArmstrongNumber {
     public static String findArmstrongNumber (int count){
@@ -32,6 +32,6 @@ public class ArmstrongNumber {
             }
         }
 
-        return msg;
+        return msg.replaceAll("\\s*,\\s*$", "");
     }
 }

@@ -1,6 +1,6 @@
 package by.itstep.makejt.javastages.stage11.addtask02.controller;
 
-import by.itstep.makejt.javastages.stage11.addtask02.magic.logic.ArmstrongNumber;
+import by.itstep.makejt.javastages.stage11.addtask02.model.logic.ArmstrongNumber;
 import by.itstep.makejt.javastages.stage11.view.Printer;
 
 import java.util.Scanner;
