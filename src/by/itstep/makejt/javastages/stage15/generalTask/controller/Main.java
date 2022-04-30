@@ -46,7 +46,14 @@ public class Main {
         String msg = AcademicPerformance.findGroupWithUnsatisfactoryMarks(array, n, m);
         Printer.print("\nGroups with unsatisfactory marks:" + msg);
 
+        int[][] array1 = AcademicPerformance.findGroupWithHighPerformance(array, n, m);
 
+        for (int i = 0; i < n; i++) {
+            System.out.println("\nMarks of group № " + (i + 1) + " after changes");
+            for (int j = 0; j < m; j++) {
+                System.out.print(array1[i][j] + " ");
+            }
+        }
     }
 }
 

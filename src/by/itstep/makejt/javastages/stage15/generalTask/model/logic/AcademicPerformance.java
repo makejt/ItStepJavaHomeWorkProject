@@ -90,30 +90,36 @@ public class AcademicPerformance {
         }
         return (double) sum / count;
     }
+
+
+    public static int[][] findGroupWithHighPerformance(int[][] array, int n, int m) {
+
+        double average = findAverageAcademyPerformance(array, n, m);
+
+        for (int i = 0; i < n; i++) {
+
+            int sum = 0;
+            double average1 = 0;
+
+            for (int j = 0; j < m; j++) {
+                sum += array[i][j];
+            }
+            average1 = (double) sum / m;
+
+            if (average1 > average) {
+                for (int j = 0; j < m; j++) {
+
+                    if (array[i][j] < 10) {
+
+                        array[i][j] = array[i][j] + 1;
+                    }
+                }
+
+            }
+
+
+        }
+        return array;
+    }
+
 }
-
-
-//    public static int[][] findGroupWithHighPerformance(int[][] array, int n, int m) {
-//
-//        int[][] array1 = new int[n][m];
-//        double average = findAverageAcademyPerformance(array, n, m);
-//
-//
-//        int sum = 0;
-//        double average1 = 0;
-//        for (int i = 0; i < n; i++) {
-//            for (int j = 0; j < m; j++) {
-//                sum += array[i][j];
-//            }
-//            average1 = (double) sum / m;
-//
-//            if (average1 > average) {
-//
-
-//                    }
-//                }
-//            }
-//        }
-//    }
-//}
-

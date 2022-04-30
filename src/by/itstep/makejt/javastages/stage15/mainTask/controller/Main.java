@@ -1,5 +1,8 @@
 package by.itstep.makejt.javastages.stage15.mainTask.controller;
 
+import by.itstep.makejt.javastages.stage15.mainTask.model.logic.ArraySorting;
+import by.itstep.makejt.view.Printer;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -25,8 +28,12 @@ public class Main {
         }
 
 
-        System.out.println("Array1 \n" + Arrays.toString(array1));
-        System.out.println("Array2 \n" + Arrays.toString(array2));
+        System.out.println("Array1: " + Arrays.toString(array1));
+        System.out.println("Array2: " + Arrays.toString(array2));
+
+        int [] array3 = ArraySorting.uniteArrays(array1, array2, n, m);
+        Printer.print("Array3: " + Arrays.toString(array3));
+
 
 
     }
