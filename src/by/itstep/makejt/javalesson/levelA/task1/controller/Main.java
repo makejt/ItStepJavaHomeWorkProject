@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
 
         int size = ArrayInitializer.inputIntValue("Input size of array:");
-        int [] array = new int[size];
+        int[] array = new int[size];
         int min = ArrayInitializer.inputIntValue("Input min:");
         int max = ArrayInitializer.inputIntValue("Input max:");
 

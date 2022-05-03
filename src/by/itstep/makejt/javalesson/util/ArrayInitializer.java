@@ -16,6 +16,13 @@ public class ArrayInitializer {
             }
     }
 
+    public static void randomInitDouble (double [] array, int min, int max){
+        for (int i = 0; i < array.length; i++) {
+            array [i] = RANDOM.nextInt(max - min + 1) + min;
+        }
+    }
+
+
     public static void userInit (int [] array){
         for (int i = 0; i < array.length; i++) {
             System.out.printf("[%d]: ", i + 1);
